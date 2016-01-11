@@ -1,0 +1,78 @@
+/*
+Home Page
+*/
+
+body.path-frontpage{
+    /* Removes scrollbar */
+    overflow: hidden;
+}
+
+#main-wrapper{
+    margin-top: 120px;
+}
+
+.region-featured-top{
+    #block-views-block-front-page-banner-block-1{
+    	.views-field-field-image{
+    		img{
+    			/* Set rules to fill background */
+			    min-height: 100%;
+			    min-width: 1024px;
+
+			    /* Set up proportionate scaling */
+			    width: 100%;
+			    height: auto;
+
+			    /* Set up positioning */
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+    		}
+    	}
+    }
+}
+
+#block-csuf-main-menu{
+    position: absolute;
+    right: 0;
+    padding-top: 0px;
+    background: none;
+    border: none;
+    .content{
+        font-size: 25px;
+        ul.menu{
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+#content{
+	#block-csuf-search{
+		.search-form{
+			input#edit-keys{
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid white;
+				color: white;
+				float: left;
+				font-size: 2em;
+				font-weight: 300;
+				line-height: 1.4em;
+				margin: 0.5em 4px 0 0;
+				padding: 0.25em;
+				width: 60%;
+			}
+			input#edit-submit{
+			    background: url('../images/icon-w-search.svg') no-repeat;
+				border: none;
+				height: 70px;
+				width: 70px;
+			}
+		}
+	}
+    .feed-icons{
+        display: none;
+    }
+}

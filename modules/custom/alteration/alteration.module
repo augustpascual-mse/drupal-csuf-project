@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_form_alter
+ */
+function alteration_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+	if ('search_block_form' == $form_id) {
+		$form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
+	}
+
+}
