@@ -1,10 +1,12 @@
-csuf-front:
+csuf:
   version: 1.x
   css:
     theme:
       css/global.css: {}
+      css/overrides.css: {}
       css/front.css: {}
-csuf-google:
+      css/login.css: {}
+google:
     license:
         version: 1.x
         name: Google Font
@@ -12,14 +14,16 @@ csuf-google:
     css:
       theme:
         //fonts.googleapis.com/css?family=Lato: { type: external }
-csuf-mdl:
+mdl:
     license:
         version: 1.x
         name: Material Design Lite
         url: http://www.getmdl.io
     css:
       theme:
-        //storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css: { type: external }
+        css/mdl-styles.css: {}
+        //storage.googleapis.com/code.getmdl.io/1.0.6/material.min.css: { type: external }
+        //fonts.googleapis.com/icon?family=Material+Icons: { type: external }
     js:
       theme:
         https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js: { type: external }

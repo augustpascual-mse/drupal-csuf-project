@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;AAIA,WAAW;EACP,UAAU,EAAE,MAAM;EAClB,+BAAmB;IACf,gBAAgB,EAAE,OAAO;;AAIjC,uBAAuB;EACnB,OAAO,EAAE,aAAa;;AAG1B,qCAAsC;EACpC,SAAS,EAAE,IAAI",
+"sources": ["../sass/overrides.scss"],
+"names": [],
+"file": "overrides.css"
+}

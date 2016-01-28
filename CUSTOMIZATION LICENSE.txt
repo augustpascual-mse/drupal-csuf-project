@@ -1,0 +1,7 @@
+Some fonts are downloaded from Google Fonts www.google.com/fonts
+
+Some icons downloaded from Flaticon and made by Freepik www.freepik.com
+Creative Commons BY 3.0
+
+Some templates, components, and styles are from Material Design Lite www.getmdl.io	
+Copyright Google, 2015. Licensed under an Apache-2 license.

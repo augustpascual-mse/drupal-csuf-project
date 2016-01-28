@@ -1,0 +1,18 @@
+/*
+Overrides
+*/
+
+.mdl-layout{
+    overflow-y: hidden;
+    .mdl-layout__header{
+        background-color: #2e2e2e;
+    }
+}
+
+.mdl-layout__header-row{
+    padding: 0 40px 0 40px;
+}
+
+.mdl-textonly section.section--center {
+  max-width: 100%;
+}

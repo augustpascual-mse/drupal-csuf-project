@@ -4,9 +4,9 @@ description: A custom theme for csuf project extends bartik
 core: 8.x
 base theme: bartik
 libraries:
-  - csuf/csuf-front
-  - csuf/csuf-google
-  - csuf/csuf-mdl
+  - csuf/google
+  - csuf/mdl
+  - csuf/csuf
 regions:
   header: Header
   primary_menu: 'Primary menu'

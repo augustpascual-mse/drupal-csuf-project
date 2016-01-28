@@ -29,7 +29,10 @@ body.path-frontpage {
   #block-csuf-main-menu .content {
     font-size: 25px; }
     #block-csuf-main-menu .content ul.menu a {
-      color: white; }
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-size: 23px;
+      border-bottom: 0px; }
 
 #content #block-csuf-search .search-form input#edit-keys {
   background-color: transparent;

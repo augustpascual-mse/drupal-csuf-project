@@ -5,3 +5,31 @@ Global
 body{
     font-family: 'Lato', sans-serif;
 }
+
+img.logo{
+    height: 50px;
+    margin-bottom:10px;
+}
+
+span.logo{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 800;
+    color: #6ab344;
+    margin-right: 5px;
+}
+
+.mdl-layout{
+    overflow-y: hidden;
+    .mdl-layout__header{
+        background-color: #2e2e2e;
+    }
+}
+
+.mdl-layout__header-row{
+    padding: 0 40px 0 40px;
+}
+
+.mdl-textonly section.section--center {
+  max-width: 100%;
+}
