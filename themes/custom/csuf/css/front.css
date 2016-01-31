@@ -5,9 +5,6 @@ body.path-frontpage {
   /* Removes scrollbar */
   overflow: hidden; }
 
-#main-wrapper {
-  margin-top: 120px; }
-
 .region-featured-top #block-views-block-front-page-banner-block-1 .views-field-field-image img {
   /* Set rules to fill background */
   min-height: 100%;

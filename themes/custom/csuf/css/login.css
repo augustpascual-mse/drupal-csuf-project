@@ -2,5 +2,8 @@ body.path-user {
   background: #ffffff; }
   body.path-user .main-content {
     margin-left: 33%; }
+  body.path-user .login-card-square > .mdl-card__title {
+    color: #fff;
+    background: #2196F3; }
 
 /*# sourceMappingURL=login.css.map */

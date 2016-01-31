@@ -1,0 +1,39 @@
+/*
+Company
+*/
+body.page-node-type-company #main-wrapper {
+  margin-top: 50px; }
+body.page-node-type-company #block-views-block-company-block-1 .views-field-field-logo img {
+  border: 1px solid #dedede; }
+body.page-node-type-company #block-views-block-company-block-1 .views-field-title .field-content {
+  font-size: 25px; }
+body.page-node-type-company #block-views-block-company-block-1 .views-field-field-website a {
+  font-size: 16px;
+  color: #2196F3; }
+body.page-node-type-company #block-views-block-jobs-block-1 {
+  font-family: 'Lato', sans-serif; }
+  body.page-node-type-company #block-views-block-jobs-block-1 h2 {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif; }
+  body.page-node-type-company #block-views-block-jobs-block-1 .views-row {
+    margin-bottom: 18px; }
+body.page-node-type-company .mdl-layout__content .company-benefits,
+body.page-node-type-company .mdl-layout__content .company-interview {
+  display: none; }
+body.page-node-type-company .mdl-layout__content .company-card-icons {
+  width: 70px; }
+body.page-node-type-company .field--name-field-banner {
+  padding-left: 8px;
+  padding-right: 8px; }
+  body.page-node-type-company .field--name-field-banner img {
+    margin: 0; }
+body.page-node-type-company .content-card-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12); }
+  body.page-node-type-company .content-card-bottom .apply-now {
+    margin: 20px auto;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    background: #2196F3;
+    color: #fff; }
+
+/*# sourceMappingURL=node-company.css.map */

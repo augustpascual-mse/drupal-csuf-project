@@ -59,6 +59,8 @@
  * @see template_preprocess_node()
  */
 #}
+{{ attach_library('csuf/csuf-node-company') }}
+
 {%
   set classes = [
     'node',
@@ -97,41 +99,46 @@
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing company-about-us">
+                <h4 class="mdl-cell mdl-cell--12-col title-about-us">About Us</h4>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                    <img class="company-card-icons" src="/themes/custom/csuf/images/about-us.png">
                 </div>
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                    {{content.body}}
                 </div>
               </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing company-benefits">
+                <h4 class="mdl-cell mdl-cell--12-col title-about-us">Benefits</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                    <img class="company-card-icons" src="/themes/custom/csuf/images/benefits.png">
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    {{content.field_benefits}}
+                </div>
+              </div>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing company-interview">
+                <h4 class="mdl-cell mdl-cell--12-col title-about-us">Interview</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                    <img class="company-card-icons" src="/themes/custom/csuf/images/interview.png">
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                    {{content.field_interview}}
+                </div>
+              </div>
+              <div class="content-card-bottom">
+                 <button class="mdl-button mdl-js-button mdl-button--raised apply-now">
+                    Apply Now
+                  </button>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
+              <li class="mdl-menu__item menu-about-us">About</li>
+              <li class="mdl-menu__item menu-benefits">Benefits</li>
+              <li class="mdl-menu__item menu-interview">Interview</li>
             </ul>
           </section>
           <section class="section--footer mdl-color--white mdl-grid">
@@ -139,7 +146,7 @@
             </div>
           </section>
         </div>
-      </main>
-  </div>
+       </main>
+     </div>
   </div>
 </article>

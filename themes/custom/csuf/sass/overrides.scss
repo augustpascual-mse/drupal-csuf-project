@@ -2,17 +2,68 @@
 Overrides
 */
 
-.mdl-layout{
-    overflow-y: hidden;
-    .mdl-layout__header{
-        background-color: #2e2e2e;
+// Global
+.mdl-color--primary{
+    background-color: #2196F3 !important;
+}
+.android-navigation {
+    .mdl-navigation__link:hover{
+        border-bottom: 4px solid #2196F3;
     }
 }
 
-.mdl-layout__header-row{
-    padding: 0 40px 0 40px;
-}
+// Company
+body.page-node-type-company{
 
-.mdl-textonly section.section--center {
-  max-width: 100%;
+    .region-content ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar .block{
+        background-color: #ffffff;
+        border: none;
+        padding-top: 0px;
+        .content{
+            font-size: 15px;
+        }
+    }
+
+    .mdl-layout{
+        overflow-y: hidden;
+        .mdl-layout__header{
+            background-color: #2e2e2e;
+        }
+    }
+
+    .mdl-layout__header-row{
+        padding: 0 40px 0 40px;
+    }
+
+    .mdl-textonly section.section--center {
+        max-width: 100%;
+    }
+
+    .mdl-textonly main > .mdl-layout__tab-panel {
+        padding-top: 0px;
+    }
+
+    .mdl-textonly section .section__text {
+        padding-top: 0px;
+    }
+
+    .mdl-textonly.mdl-textonly {
+        .mdl-card__supporting-text{
+            h4{
+                font-family: 'Lato', sans-serif;
+            }
+        }
+    }
+
+    @media all and (min-width: 560px) {
+      .node .field--type-image {
+        margin: 0;
+      }
+    }
+
 }

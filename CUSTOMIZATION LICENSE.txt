@@ -1,7 +1,14 @@
-Some fonts are downloaded from Google Fonts www.google.com/fonts
+Lato font downloaded from Google Fonts www.google.com/fonts
+Licensed under the SIL Open Font License, Version 1.1.
 
 Some icons downloaded from Flaticon and made by Freepik www.freepik.com
 Creative Commons BY 3.0
 
 Some templates, components, and styles are from Material Design Lite www.getmdl.io	
 Copyright Google, 2015. Licensed under an Apache-2 license.
+
+Google-Logo.png downloaded from Wikimedia Commons commons.wikimedia.org by SLembas
+Own Work/Public Domain
+
+Google-Banner.png downloaded from Flickr www.flickr.com and made by Yang and Yun's album
+Attribution-NonCommercial-ShareAlike 2.0 Generic

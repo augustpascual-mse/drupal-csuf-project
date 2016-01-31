@@ -6,6 +6,13 @@ csuf:
       css/overrides.css: {}
       css/front.css: {}
       css/login.css: {}
+csuf-node-company:
+  version: 1.x
+  css:
+    theme:
+      css/node-company.css: {}
+  js:
+      js/node-company.js: {}
 google:
     license:
         version: 1.x
@@ -25,5 +32,6 @@ mdl:
         //storage.googleapis.com/code.getmdl.io/1.0.6/material.min.css: { type: external }
         //fonts.googleapis.com/icon?family=Material+Icons: { type: external }
     js:
-      theme:
-        https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js: { type: external }
+        //storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js: { type: external }
+    dependencies:
+      - core/jquery

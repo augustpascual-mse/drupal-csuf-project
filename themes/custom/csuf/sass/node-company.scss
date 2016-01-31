@@ -1,0 +1,71 @@
+/*
+Company
+*/
+
+body.page-node-type-company{
+
+    #main-wrapper{
+        margin-top: 50px;
+    }
+
+    #block-views-block-company-block-1{
+        .views-field-field-logo{
+            img{
+                border: 1px solid #dedede;
+            }
+        }
+        .views-field-title{
+            .field-content{
+                font-size: 25px;
+            }
+        }
+        .views-field-field-website{
+            a{
+                font-size: 16px;
+                color: #2196F3;
+            }
+        }
+    }
+
+    #block-views-block-jobs-block-1{
+        font-family: 'Lato', sans-serif;
+        h2{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+        }
+        .views-row{
+            margin-bottom: 18px;
+        }
+    }
+
+    .mdl-layout__content{
+        .company-benefits,
+        .company-interview
+        {
+            display: none;
+        }
+        .company-card-icons{
+            width: 70px;
+        }
+    }
+
+    .field--name-field-banner{
+        padding-left: 8px;
+        padding-right: 8px;
+        img{
+            margin: 0;
+        }
+    }
+
+    .content-card-bottom{
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        .apply-now{
+            margin: 20px auto;
+            display: block;
+            font-family: 'Lato', sans-serif;
+            background: #2196F3;
+            color: #fff;
+        }
+    }
+
+}
