@@ -9,12 +9,8 @@ body.page-node-type-company{
     }
 
     #block-views-block-company-block-1{
-        .views-field-field-logo{
-            img{
-                border: 1px solid #dedede;
-            }
-        }
         .views-field-title{
+            margin-top: 10px;
             .field-content{
                 font-size: 25px;
             }
@@ -27,14 +23,41 @@ body.page-node-type-company{
         }
     }
 
-    #block-views-block-jobs-block-1{
+    #block-views-block-jobs-block-2{
         font-family: 'Lato', sans-serif;
         h2{
             font-size: 16px;
             font-family: 'Lato', sans-serif;
+            border-bottom: none;
         }
         .views-row{
             margin-bottom: 18px;
+        }
+        .view-filters{
+            .form--inline{
+                .form-item{
+                    margin: 0;
+                }
+            }
+            border-bottom: 1px solid #dedede;
+            .form-select{
+                width: 175px;
+            }
+            input.button{
+                font-family: 'Lato', sans-serif;
+                background: #2196F3;
+                color: #fff;
+                width: 100px;
+                height: 36px;
+                min-width: 64px;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0;
+            }
+        }
+        .view-content{
+            margin-top: 10px;
         }
     }
 
@@ -65,6 +88,15 @@ body.page-node-type-company{
             font-family: 'Lato', sans-serif;
             background: #2196F3;
             color: #fff;
+            border: none;
+            position: relative;
+            width: 100px;
+            height: 36px;
+            min-width: 64px;
+            padding: 0 16px;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 36px;
         }
     }
 

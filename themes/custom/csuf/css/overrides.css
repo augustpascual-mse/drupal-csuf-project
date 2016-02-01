@@ -13,7 +13,7 @@ body.page-node-type-company .region-content ul {
 body.page-node-type-company .sidebar .block {
   background-color: #ffffff;
   border: none;
-  padding-top: 0px; }
+  padding-top: 0; }
   body.page-node-type-company .sidebar .block .content {
     font-size: 15px; }
 body.page-node-type-company .mdl-layout {
@@ -25,9 +25,9 @@ body.page-node-type-company .mdl-layout__header-row {
 body.page-node-type-company .mdl-textonly section.section--center {
   max-width: 100%; }
 body.page-node-type-company .mdl-textonly main > .mdl-layout__tab-panel {
-  padding-top: 0px; }
+  padding-top: 0; }
 body.page-node-type-company .mdl-textonly section .section__text {
-  padding-top: 0px; }
+  padding-top: 0; }
 body.page-node-type-company .mdl-textonly.mdl-textonly .mdl-card__supporting-text h4 {
   font-family: 'Lato', sans-serif; }
 @media all and (min-width: 560px) {

@@ -165,7 +165,7 @@ class CustomSearchBlockForm extends FormBase {
         $options = array();
         $options['c-all'] = $config['taxonomy'][$vid]['all_text'];
         $vocabulary_depth = (!$config['taxonomy'][$vid]['depth']) ? NULL : $config['taxonomy'][$vid]['depth'];
-        $terms = taxonomy_get_tree($vid, 0, $vocabulary_depth, TRUE);
+        $terms = \Drupal::entityManager()->getStorage('taxonomy_term')->loadTree($vid, 0, $vocabulary_depth, TRUE);
         foreach ($terms as $term) {
           $termName = SafeMarkup::checkPlain(\Drupal::entityManager()->getTranslationFromContext($term)->label());
           $options['c-' . $term->id()] = (Unicode::substr($config['taxonomy'][$vid]['type'], 0, 6) == 'select') ? str_repeat('-', $term->depth) . ' ' . $termName : $termName;

@@ -29,7 +29,7 @@ body.path-frontpage {
       color: white;
       font-family: 'Lato', sans-serif;
       font-size: 23px;
-      border-bottom: 0px; }
+      border-bottom: 0; }
 
 #content #block-csuf-search .search-form input#edit-keys {
   background-color: transparent;

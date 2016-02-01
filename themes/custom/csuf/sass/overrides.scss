@@ -23,7 +23,7 @@ body.page-node-type-company{
     .sidebar .block{
         background-color: #ffffff;
         border: none;
-        padding-top: 0px;
+        padding-top: 0;
         .content{
             font-size: 15px;
         }
@@ -45,11 +45,11 @@ body.page-node-type-company{
     }
 
     .mdl-textonly main > .mdl-layout__tab-panel {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .mdl-textonly section .section__text {
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     .mdl-textonly.mdl-textonly {

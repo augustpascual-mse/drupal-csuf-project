@@ -3,20 +3,40 @@ Company
 */
 body.page-node-type-company #main-wrapper {
   margin-top: 50px; }
-body.page-node-type-company #block-views-block-company-block-1 .views-field-field-logo img {
-  border: 1px solid #dedede; }
-body.page-node-type-company #block-views-block-company-block-1 .views-field-title .field-content {
-  font-size: 25px; }
+body.page-node-type-company #block-views-block-company-block-1 .views-field-title {
+  margin-top: 10px; }
+  body.page-node-type-company #block-views-block-company-block-1 .views-field-title .field-content {
+    font-size: 25px; }
 body.page-node-type-company #block-views-block-company-block-1 .views-field-field-website a {
   font-size: 16px;
   color: #2196F3; }
-body.page-node-type-company #block-views-block-jobs-block-1 {
+body.page-node-type-company #block-views-block-jobs-block-2 {
   font-family: 'Lato', sans-serif; }
-  body.page-node-type-company #block-views-block-jobs-block-1 h2 {
+  body.page-node-type-company #block-views-block-jobs-block-2 h2 {
     font-size: 16px;
-    font-family: 'Lato', sans-serif; }
-  body.page-node-type-company #block-views-block-jobs-block-1 .views-row {
+    font-family: 'Lato', sans-serif;
+    border-bottom: none; }
+  body.page-node-type-company #block-views-block-jobs-block-2 .views-row {
     margin-bottom: 18px; }
+  body.page-node-type-company #block-views-block-jobs-block-2 .view-filters {
+    border-bottom: 1px solid #dedede; }
+    body.page-node-type-company #block-views-block-jobs-block-2 .view-filters .form--inline .form-item {
+      margin: 0; }
+    body.page-node-type-company #block-views-block-jobs-block-2 .view-filters .form-select {
+      width: 175px; }
+    body.page-node-type-company #block-views-block-jobs-block-2 .view-filters input.button {
+      font-family: 'Lato', sans-serif;
+      background: #2196F3;
+      color: #fff;
+      width: 100px;
+      height: 36px;
+      min-width: 64px;
+      font-size: 14px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0; }
+  body.page-node-type-company #block-views-block-jobs-block-2 .view-content {
+    margin-top: 10px; }
 body.page-node-type-company .mdl-layout__content .company-benefits,
 body.page-node-type-company .mdl-layout__content .company-interview {
   display: none; }
@@ -34,6 +54,15 @@ body.page-node-type-company .content-card-bottom {
     display: block;
     font-family: 'Lato', sans-serif;
     background: #2196F3;
-    color: #fff; }
+    color: #fff;
+    border: none;
+    position: relative;
+    width: 100px;
+    height: 36px;
+    min-width: 64px;
+    padding: 0 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 36px; }
 
 /*# sourceMappingURL=node-company.css.map */
