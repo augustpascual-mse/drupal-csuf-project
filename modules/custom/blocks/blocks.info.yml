@@ -1,0 +1,6 @@
+name: Blocks Module
+description: Custom blocks for Drupal
+package: Custom
+
+type: module
+core: 8.x

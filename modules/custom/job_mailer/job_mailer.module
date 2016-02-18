@@ -1,0 +1,19 @@
+<?php
+
+ /**
+ * Implements hook_mail().
+ */
+function job_mailer_mail($key, &$message, $params) {
+  $options = array(
+    'langcode' => $message['langcode'],
+  );
+
+  switch ($key) {
+    case 'apply_job':
+      //$message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['from'] = 'augustpascual.mse@gmail.com';
+      $message['subject'] = t('Subject');
+      $message['body'][] = t('Body');
+      break;
+  }
+}

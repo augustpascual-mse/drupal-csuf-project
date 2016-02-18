@@ -67,3 +67,17 @@ body.page-node-type-company{
     }
 
 }
+
+// Jobs
+body.page-node-type-jobs{
+
+    .sidebar .block{
+        background-color: #ffffff;
+        border: none;
+        padding-top: 0;
+        .content{
+            font-size: 15px;
+        }
+    }
+
+}

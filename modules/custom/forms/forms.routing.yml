@@ -1,0 +1,7 @@
+forms_apply:
+  path: 'forms/apply'
+  defaults:
+    _form: '\Drupal\forms\Form\ApplyForm'
+    _title: 'Apply'
+  requirements:
+    _permission: 'access content'

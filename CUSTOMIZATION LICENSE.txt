@@ -1,4 +1,4 @@
-Lato font downloaded from Google Fonts www.google.com/fonts
+Lato font from Google Fonts www.google.com/fonts
 Licensed under the SIL Open Font License, Version 1.1.
 
 Some icons downloaded from Flaticon and made by Freepik www.freepik.com
@@ -12,3 +12,6 @@ Own Work/Public Domain
 
 Google-Banner.png downloaded from Flickr www.flickr.com and made by Yang and Yun's album
 Attribution-NonCommercial-ShareAlike 2.0 Generic
+
+Angular.JS from Google angularjs.org
+MIT License

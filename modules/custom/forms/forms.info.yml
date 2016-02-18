@@ -1,0 +1,6 @@
+name: Forms Module
+description: Custom forms for Drupal
+package: Custom
+
+type: module
+core: 8.x

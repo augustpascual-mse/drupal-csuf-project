@@ -1,0 +1,128 @@
+/*
+Jobs
+*/
+
+body.page-node-type-jobs{
+
+    #block-views-block-company-block-2{
+        .views-field-field-logo{
+            a{
+                border-bottom: none;
+            }
+        }
+        .views-field-title{
+            margin-top: 10px;
+            a{
+                border-bottom: none;
+            }
+            .field-content{
+                font-size: 25px;
+            }
+        }
+        .views-field-field-website{
+            a{
+                font-size: 16px;
+                color: #2196F3;
+            }
+        }
+        #apply-job{
+            margin-top: 25px;
+            font-family: 'Lato', sans-serif;
+            background: #4BAF4F;
+            color: #fff;
+            width: 100px;
+            height: 36px;
+            min-width: 64px;
+            font-size: 14px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 0;
+        }
+    }
+    #block-views-block-job-info-block-1{
+        font-size: 16px;
+        line-height: 25px;
+        .views-field-title{
+            font-weight: 600;
+        }
+        .views-field-body{
+            margin-top: 30px;
+            p{
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .field-content{
+            display: inline;
+        }
+    }
+    #block-views-block-jobs-block-2{
+        font-family: 'Lato', sans-serif;
+        h2{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            border-bottom: none;
+        }
+        a{
+            border-bottom: none;
+        }
+        .views-row{
+            margin-bottom: 18px;
+        }
+        .view-filters{
+            .form--inline{
+                .form-item{
+                    margin: 0;
+                }
+            }
+            border-bottom: 1px solid #dedede;
+            .form-select{
+                width: 175px;
+            }
+            input.button{
+                font-family: 'Lato', sans-serif;
+                background: #2196F3;
+                color: #fff;
+                width: 100px;
+                height: 36px;
+                min-width: 64px;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0;
+            }
+        }
+        .view-content{
+            margin-top: 10px;
+        }
+    }
+    #block-views-block-job-info-block-2,
+    #block-views-block-job-info-block-3{
+        h3{
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+    #block-applyjobblock{
+        #forms-apply-form{
+            input{
+                width: 300px;
+            }
+            .button{
+                font-family: 'Lato', sans-serif;
+                background: #4BAF4F;
+                color: #fff;
+                width: 100px;
+                height: 36px;
+                min-width: 64px;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 0;
+                margin-left: 0;
+            }
+        }
+    }
+}

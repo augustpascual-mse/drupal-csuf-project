@@ -1,0 +1,6 @@
+name: Job Mailer Module
+description: Send e-mail to Employer when Candidate apply
+package: Custom
+
+type: module
+core: 8.x

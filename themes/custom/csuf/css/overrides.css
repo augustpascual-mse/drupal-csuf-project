@@ -34,4 +34,11 @@ body.page-node-type-company .mdl-textonly.mdl-textonly .mdl-card__supporting-tex
   body.page-node-type-company .node .field--type-image {
     margin: 0; } }
 
+body.page-node-type-jobs .sidebar .block {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 0; }
+  body.page-node-type-jobs .sidebar .block .content {
+    font-size: 15px; }
+
 /*# sourceMappingURL=overrides.css.map */
