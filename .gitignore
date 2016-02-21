@@ -2,3 +2,4 @@ sites/default/files/php/*
 themes/custom/csuf/.sass-cache/*
 sites/default/files/*
 private/*
+vendor/*
