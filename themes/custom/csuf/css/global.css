@@ -4,7 +4,9 @@ Global
 body {
   font-family: 'Lato', sans-serif; }
   body #main-wrapper {
-    margin-top: 120px; }
+    margin-top: 70px; }
+  body .messages__wrapper {
+    margin-top: 50px; }
 
 img.logo {
   height: 40px;

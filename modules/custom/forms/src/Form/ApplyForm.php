@@ -62,7 +62,7 @@ class ApplyForm extends FormBase
    */
   public function validateForm(array &$form, FormStateInterface $form_state)
   {
-    // TODO Validate file resume if less than 1MB
+    // TODO Validate file resume if less than 1MB and limit filetypes
 
   }
 
@@ -71,23 +71,53 @@ class ApplyForm extends FormBase
    */
   public function submitForm(array &$form, FormStateInterface $form_state)
   {
-      // TODO Email company representative
-      // TODO Update Database Candidate Applied to Job
-      //$resume = $form_state->getUserInput('resume');
-      //$resumeFilename = $resume['files']['resume'];
-      $resumeFileId = $form_state->getValue('resume');
+      //TODO v2 Send Email via Cron not on Submit
+
+      $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+      $username = $user->get('name')->value;
+      $userId = $user->get('uid')->value;
+
       $mailManager = \Drupal::service('plugin.manager.mail');
 
-     $module = 'job_mailer';
-     $key = 'apply_job';
-     $to = 'augustpascual23@gmail.com';
-     $params['message'] = 'test';
-     $langcode = \Drupal::currentUser()->getPreferredLangcode();
-     $send = true;
+      $jobNode = \Drupal::routeMatch()->getParameter('node');
+      $jobNodeTitle = $jobNode->getTitle();
 
-     $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
-     dpm($result);
+      $companyNodeEntity = $jobNode->get('field_company');
+      $companyNode =  \Drupal\node\Entity\Node::load( $companyNodeEntity->entity->id());
+      $companyEmail = $companyNode->field_email->value;
 
-  }
+      $resumeFileId = $form_state->getValue('resume');
+      $resumeFile = db_select('file_managed', 'f')
+         ->condition('f.fid', $resumeFileId, '=')
+         ->fields('f', array('uri'))
+         ->execute()->fetchField();
+      $atttachment = array(
+        'filepath' => $resumeFile
+      );
+
+      $module = 'job_mailer';
+      $key = 'apply_job';
+      $params['job_title'] = $jobNodeTitle;
+      $params['message'] =
+          "<html>
+           <p>Please see attached resume for user: $username
+           </html>";
+      $params['attachment'] = $atttachment;
+      $langcode = \Drupal::currentUser()->getPreferredLangcode();
+      $send = true;
+      $reply =  \Drupal::config('system.site')->get('mail');
+
+      $result = $mailManager->mail($module, $key, $companyEmail, $langcode, $params, $reply, $send);
+
+      db_insert('user_job_application')
+          ->fields(array(
+              'job_id' => $jobNode->id(),
+              'user_id' => $userId,
+          ))
+          ->execute();
+
+      drupal_set_message('Your application has been sent.');
+
+    }
 
 }

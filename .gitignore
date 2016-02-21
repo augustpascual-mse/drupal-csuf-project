@@ -1,5 +1,6 @@
-sites/default/files/php/*
-themes/custom/csuf/.sass-cache/*
 sites/default/files/*
+sites/default/files/php/*
+sites/default/settings.php
+themes/custom/csuf/.sass-cache/*
 private/*
 vendor/*

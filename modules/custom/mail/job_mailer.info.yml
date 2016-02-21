@@ -1,6 +1,0 @@
-name: Mail Module
-description: Custom mail for Drupal
-package: Custom
-
-type: module
-core: 8.x

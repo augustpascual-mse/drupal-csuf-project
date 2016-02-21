@@ -7,13 +7,15 @@ function job_mailer_mail($key, &$message, $params) {
   $options = array(
     'langcode' => $message['langcode'],
   );
-
+  
   switch ($key) {
     case 'apply_job':
-      //$message['from'] = \Drupal::config('system.site')->get('mail');
-      $message['from'] = 'augustpascual.mse@gmail.com';
-      $message['subject'] = t('Subject');
-      $message['body'][] = t('Body');
-      break;
+
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['subject'] = t('Someone applied to your open job: ').$params['job_title'];
+      $message['body'][] = $params['message'];
+      $message['params']['attachments'][] = $params['attachment'];
+
+    break;
   }
 }
