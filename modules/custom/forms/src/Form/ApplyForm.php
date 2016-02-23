@@ -113,6 +113,7 @@ class ApplyForm extends FormBase
           ->fields(array(
               'job_id' => $jobNode->id(),
               'user_id' => $userId,
+              'date'    => date('Y-m-d H:i:s')
           ))
           ->execute();
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Provides a 'Hello' Block
+ * Provides a 'Form' Block
  *
  * @Block(
  *   id = "apply_job_block",
@@ -19,9 +19,7 @@ class ApplyJobBlock extends BlockBase {
   public function build()
   {
       $form = \Drupal::formBuilder()->getForm('Drupal\forms\Form\ApplyForm');
-
       return $form;
-
   }
 
 }

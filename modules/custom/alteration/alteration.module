@@ -3,10 +3,43 @@
 /**
  * Implements hook_form_alter
  */
-function alteration_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function alteration_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    if ('search_block_form' == $form_id) {
+        $form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
+    }
+}
 
-	if ('search_block_form' == $form_id) {
-		$form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
-	}
+/**
+* Implements hook_block_view_alter().
+*/
+function alteration_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block)
+{
+    if ('apply_button_block' == $block->getBaseId()) {
+        $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+        $userId = $user->get('uid')->value;
 
+        $jobNode = \Drupal::routeMatch()->getParameter('node');
+        $jobNodeId = $jobNode->id();
+
+        $applicationDate = db_select('user_job_application', 'uja')
+           ->condition('uja.job_id', $jobNodeId, '=')
+           ->condition('uja.user_id', $userId, '=')
+           ->fields('uja', array('date'))
+           ->execute()->fetchField();
+
+        if($applicationDate){
+            $formattedDate = date('F jS Y', strtotime($applicationDate));
+            $build = array(
+                         '#markup' => "<span class='already-applied'>You already applied to this job on $formattedDate</span>",
+                         '#cache' => array(
+                             'max-age' => 0,
+                         ),
+                         '#configuration' => array(
+                             'label' => ''
+                         )
+                     );
+        }
+
+    }
 }
