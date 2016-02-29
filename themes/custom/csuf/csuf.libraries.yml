@@ -5,7 +5,7 @@ csuf:
       css/global.css: {}
       css/overrides.css: {}
       css/front.css: {}
-      css/login.css: {}
+      css/user.css: {}
 csuf-node-company:
   version: 1.x
   css:

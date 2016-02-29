@@ -1,4 +1,5 @@
 body.path-user {
+  overflow-x: hidden;
   background: #ffffff; }
   body.path-user .main-content {
     margin-left: 33%; }
@@ -6,4 +7,4 @@ body.path-user {
     color: #fff;
     background: #2196F3; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=user.css.map */

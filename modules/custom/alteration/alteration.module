@@ -1,14 +1,31 @@
 <?php
 
 /**
- * Implements hook_form_alter
+ * Implements hook_form_id_alter
  */
 function alteration_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
 {
-    if ('search_block_form' == $form_id) {
-        $form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
-    }
+    $form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
 }
+
+/**
+ * Implements hook_form_id_alter
+ */
+function alteration_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    $form['account']['mail']['#description'] = '';
+    $form['company_rep'] = array(
+        '#type' => 'checkbox',
+        '#title' => t("I am Company Representative."),
+    );
+
+    $form['actions']['submit']['#submit'][] = 'alteration_form_user_register_form_submit';
+}
+
+function alteration_form_user_register_form_submit(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    $form_state->setRedirect('user.page');
+}
+
 
 /**
 * Implements hook_block_view_alter().
