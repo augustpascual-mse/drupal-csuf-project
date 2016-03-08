@@ -3,9 +3,9 @@ csuf:
   css:
     theme:
       css/global.css: {}
-      css/overrides.css: {}
       css/front.css: {}
       css/user.css: {}
+      css/overrides.css: {}
 csuf-node-company:
   version: 1.x
   css:
@@ -20,6 +20,10 @@ csuf-node-jobs:
       css/node-jobs.css: {}
   js:
       js/node-jobs.js: {}
+csuf-user:
+  version: 1.x
+  js:
+      js/user.js: {}
 angular:
     license:
         version: 1.x

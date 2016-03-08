@@ -2,10 +2,94 @@ body.path-user{
     overflow-x: hidden;
     background: #ffffff;
     .main-content{
-        margin-left: 33%;
+        .login-card-square{
+            margin-left: 33%;
+        }
+        .region-content{
+            .field--name-field-first-name,
+            .field--name-field-last-name{
+                display: none;
+            }
+            .personal-information,
+            .experience,
+            .education{
+                .mdl-card{
+                    min-height: 125px;
+                }
+                margin-top: 15px;
+                .views-view-grid .views-col{
+                    width: 100% !important;
+                }
+            }
+            .personal-information{
+                width: 30%;
+                float: left;
+                .mdl-card__title{
+                    background: #F44336;
+                    color: #FFFFFF;
+                }
+                .field--name-field-headline{
+                    font-size: 15px;
+                }
+                .field--name-field-location{
+                    a{
+                        font-size: 15px;
+                        color: rgba(0,0,0,.54);
+                        border-bottom: none;
+                    }
+                }
+                .field--name-field-summary{
+                    .field__label{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .views-element-container{
+                width: 30%;
+                float: left;
+            }
+            .experience{
+                .mdl-card__supporting-text{
+                    font-size: 15px;
+                }
+                .views-col{
+                    margin-top: 10px;
+                }
+                .mdl-card__title{
+                    background: #2296F3;
+                    color: #FFFFFF;
+                }
+                .field--name-field-job-title{
+                    font-weight: bold;
+                }
+                .field--name-field-company{
+                    float: left;
+                    width: 50%;
+                }
+                .field--name-field-job-start-date,
+                .field--name-field-job-end-date{
+                    float: right;
+                }
+            }
+            .education{
+                .mdl-card__supporting-text{
+                    font-size: 15px;
+                }
+                .mdl-card__title{
+                    background: #4CAF50;
+                    color: #FFFFFF;
+                }
+                .field--name-field-degree-field-of-study{
+                    font-weight: bold;
+                }
+            }
+        }
     }
     .login-card-square > .mdl-card__title {
       color: #fff;
       background: #2196F3;
+    }
+    .site-footer{
+        display: none;
     }
 }

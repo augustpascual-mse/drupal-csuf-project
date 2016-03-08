@@ -4,6 +4,9 @@ Licensed under the SIL Open Font License, Version 1.1.
 Some icons downloaded from Flaticon and made by Freepik www.freepik.com
 Creative Commons BY 3.0
 
+Some images are downloaded from UIFaces www.uifaces.com
+Consent Given
+
 Some templates, components, and styles are from Material Design Lite www.getmdl.io	
 Copyright Google, 2015. Licensed under an Apache-2 license.
 

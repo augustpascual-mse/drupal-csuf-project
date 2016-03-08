@@ -1,0 +1,12 @@
+<?php
+
+function csuf_preprocess_views_view(&$variables) {
+
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $uid = $user->get('uid')->value;
+    $url = \Drupal::service('path.current')->getPath();
+
+    $variables['uid'] = $uid;
+    $variables['url'] = $url;
+
+ }
