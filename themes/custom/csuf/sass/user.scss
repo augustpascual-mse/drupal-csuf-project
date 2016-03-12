@@ -92,4 +92,20 @@ body.path-user{
     .site-footer{
         display: none;
     }
+
+    // History
+    .history{
+        table {
+            tr{
+                td,
+                th{
+                    background: white;
+                }
+
+            }
+        }
+        a{
+            border-bottom: none;
+        }
+    }
 }

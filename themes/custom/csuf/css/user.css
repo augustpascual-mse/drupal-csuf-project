@@ -62,5 +62,9 @@ body.path-user {
     background: #2196F3; }
   body.path-user .site-footer {
     display: none; }
+  body.path-user .history table tr td, body.path-user .history table tr th {
+    background: white; }
+  body.path-user .history a {
+    border-bottom: none; }
 
 /*# sourceMappingURL=user.css.map */

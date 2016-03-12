@@ -1,0 +1,6 @@
+name: Job History Module
+description: Show Candidate Job History in User Page
+package: Custom
+
+type: module
+core: 8.x

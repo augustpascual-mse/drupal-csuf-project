@@ -1,0 +1,7 @@
+job_history.content:
+  path: '/user/history'
+  defaults:
+    _controller: '\Drupal\job_history\Controller\JobHistoryController::content'
+    _title: 'History'
+  requirements:
+    _permission: 'access content'
