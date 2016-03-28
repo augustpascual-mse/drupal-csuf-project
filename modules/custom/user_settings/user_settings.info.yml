@@ -1,0 +1,6 @@
+name: User Settings Module
+description: Show User Settings in User Page
+package: Custom
+
+type: module
+core: 8.x

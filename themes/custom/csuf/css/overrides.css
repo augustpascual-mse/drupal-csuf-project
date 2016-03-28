@@ -7,6 +7,9 @@ Overrides
 .android-navigation .mdl-navigation__link:hover {
   border-bottom: 4px solid #2196F3; }
 
+.android-search-box .mdl-textfield__input {
+  color: #fff; }
+
 body.page-node-type-company .region-content ul {
   margin: 0;
   padding: 0; }

@@ -43,6 +43,8 @@ body.path-frontpage {
   margin: 0.5em 4px 0 0;
   padding: 0.25em;
   width: 60%; }
+#content #block-csuf-search .search-form input#edit-keys:focus {
+  outline: none; }
 #content #block-csuf-search .search-form input#edit-submit {
   background: url("../images/icon-w-search.svg") no-repeat;
   border: none;

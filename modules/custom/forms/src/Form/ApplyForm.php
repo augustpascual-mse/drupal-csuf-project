@@ -12,12 +12,12 @@ use Drupal\Component\Utility\UrlHelper;
 
 class ApplyForm extends FormBase
 {
-  /**
+    /**
    * {@inheritdoc}
    */
   public function getFormId()
   {
-       return 'forms_apply_form';
+      return 'forms_apply_form';
   }
 
   /**
@@ -31,22 +31,22 @@ class ApplyForm extends FormBase
       $form['name'] = array(
          '#type' => 'textfield',
          '#title' => t('Name'),
-         '#required' => TRUE,
+         '#required' => true,
       );
       $form['email'] = array(
          '#type' => 'email',
          '#title' => t('Email'),
-         '#required' => TRUE,
+         '#required' => true,
       );
       $form['phone'] = array(
          '#type' => 'tel',
          '#title' => t('Phone'),
-         '#required' => TRUE,
+         '#required' => true,
       );
       $form['resume'] = array(
          '#type' => 'managed_file',
          '#title' => t('Resume'),
-         '#required' => TRUE,
+         '#required' => true,
          '#upload_location' => 'private://resume/'.$node->id().'/'.$user->get('uid')->value,
       );
       $form['submit'] = array(
@@ -62,8 +62,7 @@ class ApplyForm extends FormBase
    */
   public function validateForm(array &$form, FormStateInterface $form_state)
   {
-    // TODO Validate file resume if less than 1MB and limit filetypes
-
+      // TODO Validate file resume if less than 1MB and limit filetypes
   }
 
   /**
@@ -83,7 +82,7 @@ class ApplyForm extends FormBase
       $jobNodeTitle = $jobNode->getTitle();
 
       $companyNodeEntity = $jobNode->get('field_company');
-      $companyNode =  \Drupal\node\Entity\Node::load( $companyNodeEntity->entity->id());
+      $companyNode =  \Drupal\node\Entity\Node::load($companyNodeEntity->entity->id());
       $companyEmail = $companyNode->field_email->value;
 
       $resumeFileId = $form_state->getValue('resume');
@@ -118,7 +117,5 @@ class ApplyForm extends FormBase
           ->execute();
 
       drupal_set_message('Your application has been sent.');
-
-    }
-
+  }
 }

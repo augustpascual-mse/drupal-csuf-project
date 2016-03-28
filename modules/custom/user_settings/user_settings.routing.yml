@@ -1,0 +1,7 @@
+user_settings:
+  path: '/user/settings'
+  defaults:
+    _form: '\Drupal\user_settings\Form\UserSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'access content'

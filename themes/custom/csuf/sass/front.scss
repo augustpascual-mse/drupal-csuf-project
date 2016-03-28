@@ -63,6 +63,9 @@ body.path-frontpage{
 				padding: 0.25em;
 				width: 60%;
 			}
+            input#edit-keys:focus{
+                outline: none;
+            }
 			input#edit-submit{
 			    background: url('../images/icon-w-search.svg') no-repeat;
 				border: none;
