@@ -24,6 +24,11 @@ csuf-user:
   version: 1.x
   js:
       js/user.js: {}
+csuf-search-jobs:
+  version: 1.x
+  css:
+    theme:
+      css/search-jobs.css: {}
 angular:
     license:
         version: 1.x

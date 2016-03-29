@@ -1,0 +1,37 @@
+/*
+Search Jobs
+*/
+body.path-search .view-id-jobs #views-exposed-form-jobs-page-1 .form-actions {
+  float: left;
+  clear: none;
+  margin-top: 21px; }
+  body.path-search .view-id-jobs #views-exposed-form-jobs-page-1 .form-actions input {
+    font-family: 'Lato', sans-serif;
+    background: #2196F3;
+    color: #fff;
+    width: 100px;
+    height: 33px;
+    min-width: 64px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0; }
+body.path-search .view-id-jobs .view-content .views-row {
+  margin-top: 20px;
+  border-top: 1px solid #ccc; }
+  body.path-search .view-id-jobs .view-content .views-row .views-field-field-logo {
+    float: left;
+    min-height: 175px;
+    margin-right: 10px;
+    margin-top: 10px; }
+    body.path-search .view-id-jobs .view-content .views-row .views-field-field-logo img {
+      float: left; }
+  body.path-search .view-id-jobs .view-content .views-row .views-field-title {
+    margin-top: 10px;
+    font-weight: bold; }
+  body.path-search .view-id-jobs .view-content .views-row .views-field-field-company a {
+    color: #3b3b3b;
+    text-decoration: none;
+    border-bottom: none; }
+
+/*# sourceMappingURL=search-jobs.css.map */
