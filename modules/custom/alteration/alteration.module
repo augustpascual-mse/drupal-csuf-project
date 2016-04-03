@@ -5,7 +5,30 @@
  */
 function alteration_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
 {
+    $form['#action'] = '/search/jobs';
     $form['keys']['#attributes']['placeholder'] = t('Search for your next job...');
+}
+
+/**
+ * Implements hook_form_id_alter
+ */
+function alteration_form_node_jobs_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+    $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+    $userId = $user->get('uid')->value;
+
+    $companyNids = db_select('node__field_company_representative', 'n')
+       ->condition('n.field_company_representative_target_id', $userId, '=')
+       ->fields('n', array('entity_id'))
+       ->execute()->fetchAssoc();
+
+    foreach($companyNids as $nid){
+        $company =  \Drupal\node\Entity\Node::load($nid);
+        $companyArray[$nid] = $company->getTitle();
+    }
+
+    $form['field_company']['widget']['#options'] = $companyArray;
+
 }
 
 /**
