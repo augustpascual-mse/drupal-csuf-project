@@ -1,7 +1,6 @@
 user_settings:
   path: '/user/settings'
   defaults:
-    _form: '\Drupal\user_settings\Form\UserSettingsForm'
-    _title: 'Settings'
+    _controller: '\Drupal\user_settings\Controller\UserSettingsController::index'
   requirements:
     _permission: 'access content'

@@ -57,12 +57,15 @@ body.path-user {
     color: #FFFFFF; }
   body.path-user .main-content .region-content .education .field--name-field-degree-field-of-study {
     font-weight: bold; }
+  body.path-user .main-content .region-content .settings {
+    display: none; }
   body.path-user .login-card-square > .mdl-card__title {
     color: #fff;
     background: #2196F3; }
   body.path-user .site-footer {
     display: none; }
-  body.path-user .history table tr td, body.path-user .history table tr th {
+  body.path-user .history table tr td,
+  body.path-user .history table tr th {
     background: white; }
   body.path-user .history a {
     border-bottom: none; }
