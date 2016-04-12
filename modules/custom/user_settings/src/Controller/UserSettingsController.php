@@ -7,7 +7,6 @@
 namespace Drupal\user_settings\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\Core\Url;
 use Drupal\Core\Routing\TrustedRedirectResponse;
 
 class UserSettingsController extends ControllerBase
