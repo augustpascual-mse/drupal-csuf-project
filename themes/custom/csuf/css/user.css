@@ -3,8 +3,8 @@ body.path-user {
   background: #ffffff; }
   body.path-user .main-content .login-card-square {
     margin-left: 33%; }
-  body.path-user .main-content .region-content .field--name-field-first-name,
-  body.path-user .main-content .region-content .field--name-field-last-name {
+  body.path-user .main-content .region-content .field--name-field-first-name .field__item,
+  body.path-user .main-content .region-content .field--name-field-last-name .field__item {
     display: none; }
   body.path-user .main-content .region-content .personal-information,
   body.path-user .main-content .region-content .experience,

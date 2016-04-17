@@ -14,36 +14,40 @@ class JobHistoryController extends ControllerBase
     {
         $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
         $userId = $user->get('uid')->value;
-
+        $data = array(
+                    array('job_title' => '',
+                          'job_path' => '',
+                          'company_name' => '',
+                          'application_date' => '')
+                 );
         $appliedJobs = db_select('user_job_application', 'uja')
            ->condition('uja.user_id', $userId, '=')
            ->fields('uja', array('job_id', 'date'))
            ->orderBy('uja.date', 'DESC')
            ->execute()->fetchAll();
+        if($appliedJobs){
+            $x = 0;
+            foreach($appliedJobs as $appliedJob){
+                $jobNode =  \Drupal\node\Entity\Node::load($appliedJob->job_id);
+                $jobTitle = $jobNode->getTitle();
+                $jobPathAlias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$appliedJob->job_id);
 
-        $x = 0;
-        foreach($appliedJobs as $appliedJob){
-            $jobNode =  \Drupal\node\Entity\Node::load($appliedJob->job_id);
-            $jobTitle = $jobNode->getTitle();
-            $jobPathAlias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$appliedJob->job_id);
+                $companyNodeEntity = $jobNode->get('field_company');
+                $companyNode =  \Drupal\node\Entity\Node::load($companyNodeEntity->entity->id());
+                $companyName = $companyNode->getTitle();
 
-            $companyNodeEntity = $jobNode->get('field_company');
-            $companyNode =  \Drupal\node\Entity\Node::load($companyNodeEntity->entity->id());
-            $companyName = $companyNode->getTitle();
-
-            $data[$x]['job_title'] = $jobTitle;
-            $data[$x]['job_path'] = $jobPathAlias;
-            $data[$x]['company_name'] = $companyName;
-            $data[$x]['application_date'] = $appliedJob->date;
-            $x++;
-        }
-
-        $markUp = $this->createMarkUp($data);
-
-        return array(
-            '#type' => 'markup',
-            '#markup' => $markUp,
-          );
+                $data[$x]['job_title'] = $jobTitle;
+                $data[$x]['job_path'] = $jobPathAlias;
+                $data[$x]['company_name'] = $companyName;
+                $data[$x]['application_date'] = $appliedJob->date;
+                $x++;
+            }
+      }
+      $markUp = $this->createMarkUp($data);
+      return array(
+          '#type' => 'markup',
+          '#markup' => $markUp,
+        );
 
     }
 

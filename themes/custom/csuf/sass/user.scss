@@ -8,7 +8,9 @@ body.path-user{
         .region-content{
             .field--name-field-first-name,
             .field--name-field-last-name{
-                display: none;
+                .field__item{
+                    display: none;
+                }
             }
             .personal-information,
             .experience,
