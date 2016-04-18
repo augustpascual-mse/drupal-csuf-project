@@ -89,4 +89,26 @@ body.page-node-type-jobs #block-applyjobblock #forms-apply-form .button {
   border-radius: 0;
   margin-left: 0; }
 
+/*
+Jobs
+*/
+body.path-node .node-jobs-form {
+  width: 50%; }
+  body.path-node .node-jobs-form .field--name-body {
+    width: 80%; }
+  body.path-node .node-jobs-form #edit-body-0-format {
+    display: none; }
+  body.path-node .node-jobs-form #edit-submit {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    background: #4BAF4F;
+    color: #fff;
+    width: 110px;
+    height: 36px;
+    min-width: 64px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0; }
+
 /*# sourceMappingURL=node-jobs.css.map */

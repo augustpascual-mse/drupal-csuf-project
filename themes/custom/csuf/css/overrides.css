@@ -44,4 +44,7 @@ body.page-node-type-jobs .sidebar .block {
   body.page-node-type-jobs .sidebar .block .content {
     font-size: 15px; }
 
+.node-form .form-wrapper {
+  margin-bottom: 1em; }
+
 /*# sourceMappingURL=overrides.css.map */
