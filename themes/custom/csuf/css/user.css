@@ -6,6 +6,8 @@ body.path-user {
   body.path-user .main-content .region-content .field--name-field-first-name .field__item,
   body.path-user .main-content .region-content .field--name-field-last-name .field__item {
     display: none; }
+  body.path-user .main-content .region-content .field--name-field-contact {
+    display: none; }
   body.path-user .main-content .region-content .personal-information,
   body.path-user .main-content .region-content .experience,
   body.path-user .main-content .region-content .education {
@@ -50,6 +52,10 @@ body.path-user {
   body.path-user .main-content .region-content .experience .field--name-field-job-start-date,
   body.path-user .main-content .region-content .experience .field--name-field-job-end-date {
     float: right; }
+  body.path-user .main-content .region-content .education .field--name-field-school-start-date {
+    float: left; }
+  body.path-user .main-content .region-content .education .field--name-field-degree-field-of-study {
+    margin-top: 10px; }
   body.path-user .main-content .region-content .education .mdl-card__supporting-text {
     font-size: 15px; }
   body.path-user .main-content .region-content .education .mdl-card__title {
@@ -69,5 +75,18 @@ body.path-user {
     background: white; }
   body.path-user .history a {
     border-bottom: none; }
+  body.path-user .profile-experience-add-form #edit-field-job-start-date-0-value-day,
+  body.path-user .profile-experience-add-form #edit-field-job-end-date-0-value-day {
+    display: none; }
+  body.path-user .profile-education-add-form #edit-field-school-start-date-0-value-day,
+  body.path-user .profile-education-add-form #edit-field-school-end-date-0-value-day {
+    display: none; }
+
+body.path-profile .profile-experience-edit-form #edit-field-job-start-date-0-value-day,
+body.path-profile .profile-experience-edit-form #edit-field-job-end-date-0-value-day {
+  display: none; }
+body.path-profile .profile-education-edit-form #edit-field-school-start-date-0-value-day,
+body.path-profile .profile-education-edit-form #edit-field-school-end-date-0-value-day {
+  display: none; }
 
 /*# sourceMappingURL=user.css.map */

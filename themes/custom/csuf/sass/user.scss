@@ -12,6 +12,9 @@ body.path-user{
                     display: none;
                 }
             }
+            .field--name-field-contact{
+                display: none;
+            }
             .personal-information,
             .experience,
             .education{
@@ -74,6 +77,12 @@ body.path-user{
                 }
             }
             .education{
+                .field--name-field-school-start-date{
+                    float: left;
+                }
+                .field--name-field-degree-field-of-study{
+                    margin-top: 10px;
+                }
                 .mdl-card__supporting-text{
                     font-size: 15px;
                 }
@@ -111,6 +120,41 @@ body.path-user{
         }
         a{
             border-bottom: none;
+        }
+    }
+
+    // Add Experience
+    .profile-experience-add-form{
+        #edit-field-job-start-date-0-value-day,
+        #edit-field-job-end-date-0-value-day{
+            display: none;
+        }
+    }
+
+    // Add Education
+    .profile-education-add-form{
+        #edit-field-school-start-date-0-value-day,
+        #edit-field-school-end-date-0-value-day{
+            display: none;
+        }
+    }
+}
+
+body.path-profile{
+
+    // Edit Experience
+    .profile-experience-edit-form{
+        #edit-field-job-start-date-0-value-day,
+        #edit-field-job-end-date-0-value-day{
+            display: none;
+        }
+    }
+
+    // Edit Education
+    .profile-education-edit-form{
+        #edit-field-school-start-date-0-value-day,
+        #edit-field-school-end-date-0-value-day{
+            display: none;
         }
     }
 }
