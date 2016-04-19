@@ -2,6 +2,9 @@ body.path-user{
     overflow-x: hidden;
     background: #ffffff;
     .main-content{
+        .forgot-password{
+            font-size: 10px;
+        }
         .login-card-square{
             margin-left: 33%;
         }
@@ -11,9 +14,6 @@ body.path-user{
                 .field__item{
                     display: none;
                 }
-            }
-            .field--name-field-contact{
-                display: none;
             }
             .personal-information,
             .experience,
@@ -138,6 +138,12 @@ body.path-user{
             display: none;
         }
     }
+
+    // Edit User Form
+    #user-form{
+        width: 35%;
+    }
+
 }
 
 body.path-profile{

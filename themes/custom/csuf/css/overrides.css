@@ -47,4 +47,8 @@ body.page-node-type-jobs .sidebar .block {
 .node-form .form-wrapper {
   margin-bottom: 1em; }
 
+.password-field,
+.password-confirm {
+  width: 100%; }
+
 /*# sourceMappingURL=overrides.css.map */

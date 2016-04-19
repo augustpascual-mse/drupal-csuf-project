@@ -40,6 +40,7 @@ function alteration_form_user_register_form_alter(&$form, \Drupal\Core\Form\Form
     $form['company_rep'] = array(
         '#type' => 'checkbox',
         '#title' => t("I am Company Representative."),
+        '#weight' => 6,
     );
 
     $form['actions']['submit']['#submit'][] = 'alteration_form_user_register_form_submit';

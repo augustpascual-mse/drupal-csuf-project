@@ -1,12 +1,12 @@
 body.path-user {
   overflow-x: hidden;
   background: #ffffff; }
+  body.path-user .main-content .forgot-password {
+    font-size: 10px; }
   body.path-user .main-content .login-card-square {
     margin-left: 33%; }
   body.path-user .main-content .region-content .field--name-field-first-name .field__item,
   body.path-user .main-content .region-content .field--name-field-last-name .field__item {
-    display: none; }
-  body.path-user .main-content .region-content .field--name-field-contact {
     display: none; }
   body.path-user .main-content .region-content .personal-information,
   body.path-user .main-content .region-content .experience,
@@ -81,6 +81,8 @@ body.path-user {
   body.path-user .profile-education-add-form #edit-field-school-start-date-0-value-day,
   body.path-user .profile-education-add-form #edit-field-school-end-date-0-value-day {
     display: none; }
+  body.path-user #user-form {
+    width: 35%; }
 
 body.path-profile .profile-experience-edit-form #edit-field-job-start-date-0-value-day,
 body.path-profile .profile-experience-edit-form #edit-field-job-end-date-0-value-day {
