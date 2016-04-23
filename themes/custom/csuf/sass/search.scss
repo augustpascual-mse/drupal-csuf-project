@@ -71,13 +71,17 @@ body.path-search{
                     font-size: 16px;
                     border-bottom: none;
                 }
-                a:hover{
+                a:link,
+                a:hover,
+                a:active,
+                a:visited{
                     color: #ff4081;
                 }
             }
             .views-field-field-headline{
                 margin-top: 10px;
                 font-size: 14px;
+                font-weight: bold;
             }
             .views-field-field-summary{
                 margin-top: 5px;

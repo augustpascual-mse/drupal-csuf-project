@@ -48,10 +48,10 @@ body.path-user {
     font-weight: bold; }
   body.path-user .main-content .region-content .experience .field--name-field-company {
     float: left;
-    width: 50%; }
+    width: 55%; }
   body.path-user .main-content .region-content .experience .field--name-field-job-start-date,
   body.path-user .main-content .region-content .experience .field--name-field-job-end-date {
-    float: right; }
+    float: left; }
   body.path-user .main-content .region-content .education .field--name-field-school-start-date {
     float: left; }
   body.path-user .main-content .region-content .education .field--name-field-degree-field-of-study {
@@ -70,6 +70,19 @@ body.path-user {
     background: #2196F3; }
   body.path-user .site-footer {
     display: none; }
+  body.path-user .active-experience .views-view-grid .views-col {
+    width: 100% !important;
+    margin-bottom: 20px; }
+    body.path-user .active-experience .views-view-grid .views-col .views-field-operations {
+      width: 30%;
+      display: inline-block;
+      float: right; }
+    body.path-user .active-experience .views-view-grid .views-col .field--name-field-job-title {
+      font-size: 15px; }
+    body.path-user .active-experience .views-view-grid .views-col .field--name-field-company {
+      font-size: 13px; }
+    body.path-user .active-experience .views-view-grid .views-col .field--name-field-job-start-date {
+      float: left; }
   body.path-user .history table tr td,
   body.path-user .history table tr th {
     background: white; }

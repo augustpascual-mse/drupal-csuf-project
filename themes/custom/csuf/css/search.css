@@ -49,11 +49,15 @@ body.path-search .view-id-candidate .candidate-square {
     body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a {
       font-size: 16px;
       border-bottom: none; }
-    body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a:hover {
+    body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a:link,
+    body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a:hover,
+    body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a:active,
+    body.path-search .view-id-candidate .candidate-square .views-field-field-picture-1 a:visited {
       color: #ff4081; }
   body.path-search .view-id-candidate .candidate-square .views-field-field-headline {
     margin-top: 10px;
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: bold; }
   body.path-search .view-id-candidate .candidate-square .views-field-field-summary {
     margin-top: 5px;
     font-size: 13px;

@@ -99,3 +99,8 @@ function alteration_user_login($account)
         return;
     }
 }
+
+function alteration_form_profile_experience_add_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    $form['field_job_start_date']['widget'][0]['value']['#date_year_range'] = '-16:+1';
+    $form['field_job_end_date']['widget'][0]['value']['#date_year_range'] = '-16:+1';
+}

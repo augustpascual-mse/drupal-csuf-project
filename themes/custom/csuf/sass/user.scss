@@ -69,11 +69,11 @@ body.path-user{
                 }
                 .field--name-field-company{
                     float: left;
-                    width: 50%;
+                    width: 55%;
                 }
                 .field--name-field-job-start-date,
                 .field--name-field-job-end-date{
-                    float: right;
+                    float: left;
                 }
             }
             .education{
@@ -105,6 +105,30 @@ body.path-user{
     }
     .site-footer{
         display: none;
+    }
+
+    // Edit Experience
+    .active-experience{
+        .views-view-grid{
+            .views-col{
+                width: 100% !important;
+                margin-bottom: 20px;
+                .views-field-operations{
+                    width: 30%;
+                    display: inline-block;
+                    float: right;
+                }
+                .field--name-field-job-title{
+                    font-size: 15px;
+                }
+                .field--name-field-company{
+                    font-size: 13px;
+                }
+                .field--name-field-job-start-date{
+                    float:left;
+                }
+            }
+        }
     }
 
     // History
