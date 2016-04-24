@@ -88,9 +88,16 @@ body.path-user {
     background: white; }
   body.path-user .history a {
     border-bottom: none; }
+  body.path-user .profile-main-edit-form .field--name-field-summary {
+    width: 40%; }
+    body.path-user .profile-main-edit-form .field--name-field-summary #edit-field-summary-0-format {
+      display: none; }
   body.path-user .profile-experience-add-form #edit-field-job-start-date-0-value-day,
   body.path-user .profile-experience-add-form #edit-field-job-end-date-0-value-day {
     display: none; }
+  body.path-user .profile-experience-add-form #edit-field-job-end-date-0-value-month,
+  body.path-user .profile-experience-add-form #edit-field-job-end-date-0-value-year {
+    width: 97px; }
   body.path-user .profile-education-add-form #edit-field-school-start-date-0-value-day,
   body.path-user .profile-education-add-form #edit-field-school-end-date-0-value-day {
     display: none; }

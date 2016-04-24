@@ -147,11 +147,25 @@ body.path-user{
         }
     }
 
+    // Settings
+    .profile-main-edit-form{
+        .field--name-field-summary{
+            width:40%;
+            #edit-field-summary-0-format{
+                display: none;
+            }
+        }
+    }
+
     // Add Experience
     .profile-experience-add-form{
         #edit-field-job-start-date-0-value-day,
         #edit-field-job-end-date-0-value-day{
             display: none;
+        }
+        #edit-field-job-end-date-0-value-month,
+        #edit-field-job-end-date-0-value-year{
+            width: 97px;
         }
     }
 
